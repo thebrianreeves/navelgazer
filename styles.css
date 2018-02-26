@@ -3,7 +3,7 @@
 
 
 html {
-
+  font-size: 100%;
 
 }
 
@@ -16,23 +16,33 @@ body {
 
     text-align:center;
     font-family:sans-serif;
-    font-size: 2em;
+    font-size:1em;
+    background-color:azure;
 }
 
 section {
     position:relative;
-    
+    flex-grow:1;
     float:left;
-    background-color:antiquewhite;
-    margin:1px 4px;
+    
+    margin:3px 4px;
     padding:19px;
     text-align:center;
-
+    border-radius:4px;
+    justify-content: center;
 }
 
-section div  {  
-    flex-grow:1;
+section div {
+    background-color:none;
 }
+
+button {
+     font-size:1.4em; 
+    padding: 10px 20px;
+    margin-top:20px;
+    border-radius:10px;
+}
+
 
 img {
     position:sticky;
@@ -54,6 +64,7 @@ header {
 }
 
 h1 {
+    font-size:1.7em;
     padding:9px;
     color:white;
     text-shadow: -.5px -1px 1px rgba(10,1,1,.4);
@@ -62,18 +73,21 @@ h1 {
 
 h2 {
     color:black;
-    font-size:.7em;
+    font-size:2em;
     text-align:center;
     position:relative;
     font-weight:bold;
     left:0px;
-    top:6px;
-    line-height:10px;
+    top:-3px;
+    line-height:1.1em;
 }
 
 h3 {
-   
-    font-size:.7em;
+   line-height:1em;
+   font-size:1.4em;
+    margin-bottom:6px;
+    padding:12px;
+    font-weight:bold;
 }
 
 nav ul {
@@ -82,8 +96,6 @@ nav ul {
     list-style-type:none;
     font-style:normal;
 }
-
-
 
 a:link {
     text-decoration:none;
@@ -129,24 +141,50 @@ nav  {
     z-index:5;
     background-color:white;
     text-align:center;
-
-
     padding:10px;
-
 }
 
 .smallInfo {
     position:relative;
     left:0px;
+    margin-left:10%;
     text-align:left;
-    top:10px;
-    font-size:.8em;
+    top:0px;
+    font-size:1.2em;
+    line-height:1.24em;
     list-style-type:disc;
 }
 
+#specs {
+    
+/*    background-color:rgba(140,150,100,.3);*/
+    flex-grow:1;
+}
+
+h6 {
+    text-align:center;
+    font-size: .4em;
+}
 
 .smallInfo li{
     clear:both;
-    font-size:.5em;
+   margin-top:5px;
+   
 }
 
+#specsList {
+    
+    
+}
+
+#download  {
+    background-color:none;
+    
+}
+
+footer {
+    text-align:center;
+    display:flex;
+    
+    
+}
