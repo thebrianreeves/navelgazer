@@ -4,50 +4,148 @@
         <title>
             Navelgazer
         </title>
-        
+
+        <link rel="stylesheet" type="text/css" href="reset.css"/>
+
+
+
         <style>
-        
+
             html {
-                
-                font-size:100%;
+
+
             }
-            
-            
+
             body {
-                
+
                 text-align:center;
-                background-color:bisque;
+                
                 font-family:sans-serif;
                 font-size: 2em;
                 color:yellow;
                 font-style:italic;
-            
-              
-                
+               }
+
+
+            img {
+
             }
-            
-            
+            header {
+                background-color:white;
+            }
+
+            #container {
+
+                text-align:left;
+                width:80%;
+                margin:auto;
+                left:0px;
+                top:280px;
+            }
+
             h1 {
+                padding:9px;
+                color:white;
+                text-shadow: -.5px -1px 1px rgba(10,1,1,.4);
+            }
+
+            ul {
                 
-                text-shadow: 3px 3px 4px rgba(10,1,1,.5);
-                
-                line-height:.2em;
-                
+                font-size:.4em;
+                list-style-type:none;
+                font-style:normal;
+            }
+
+            a:link {
+                text-decoration:none;
+                color:brown;
+            }
+            a:active {
+               
+                color:black;
+            }
+
+            a:hover {
+           
+                color:white;
             }
             
             
+            a:visited {
+                color:grey;
+            }
             
+            
+            li {
+                float:left;
+                padding:5px;
+                margin:5px;
+
+            }
+
+            #logo {
+                z-index:4;
+                background-color:white;
+                float:left;
+            }
+
             p{
                 font-family:sans-serif;
                 font-size: .5em;
                 color:black;
                 font-style:normal;
+
             }
-        
+            
+            nav  {
+                
+                
+                position:relative;
+                top:10px;
+            }
+            
+            #lowerdiv{
+                
+                
+            }
+
         </style>
     </head>
     <body>
-        <h1>Navelgazer</h1>
-        <p>software</p>
+
+        <header>
+            <div id="container">
+                <div id="logo">
+
+                    <h1>Navelgazer</h1>
+
+                </div>
+
+                <nav>
+
+                    <ul>
+
+                        <li><a href="#specs">SPECIFICATIONS</a></li>
+                        <li><a href="#testimonials">TESTIMONIALS</a></li>
+                        <li><a href="#download">DOWNLOAD</a></li>
+
+
+
+                    </ul>
+
+
+
+                </nav> 
+
+            </div>
+        </header> 
+
+        <img src="autonavel2.jpg" width="100%" />
+        <div id="lowerdiv">
+
+
+
+
+        </div>
     </body>
 </html>
