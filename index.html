@@ -15,47 +15,83 @@
 
 
             }
+            
+            i {
+                
+                font-style:italic;
+            }
 
             body {
 
                 text-align:center;
-
-
                 font-family:sans-serif;
                 font-size: 2em;
-                color:yellow;
-                font-style:italic;
+
+
             }
 
+            section {
+                position:relative;
+                margin-top:20px;
+                float:left;
+                background-color:antiquewhite;
+                flex-grow
+                
+            }
 
             img {
-
+                position:sticky;
+                top:49px;
             }
             header {
                 background-color:white;
+                position: sticky;
+                top:-3px;
             }
-
-            #container {
+ 
+            .container {
 
                 text-align:left;
                 width:80%;
                 margin:auto;
-                left:0px;
-                top:280px;
+                flex:auto;
+                    
+
+
             }
 
             h1 {
                 padding:9px;
                 color:white;
                 text-shadow: -.5px -1px 1px rgba(10,1,1,.4);
+                font-style:italic;
             }
 
-            ul {
+            h2 {
+                color:black;
+                font-size:1em;
+                text-align:right;
+                position:absolute;
+                font-weight:bold;
+
+                left:480px;
+                top:66px;
+                line-height:10px;
+
+            }
+            h3 {
+                margin-left:170px;
+                font-size:.7em;
+            }
+
+            nav ul {
 
                 font-size:.4em;
                 list-style-type:none;
                 font-style:normal;
             }
+
+
 
             a:link {
                 text-decoration:none;
@@ -77,10 +113,11 @@
             }
 
 
-            li {
+            nav ul li {
                 float:left;
                 padding:5px;
                 margin:5px;
+
 
             }
 
@@ -90,25 +127,39 @@
                 float:left;
             }
 
-         nav  {
-
-
+            nav  {
                 position:relative;
                 top:10px;
             }
-            
-            
 
-           
 
-           #lowerdiv {
+            #lowerdiv {
+                z-index:5;
                 
                 background-color:white;
-                
+                text-align:left;
                 position:sticky;
-                top:400px;
-                
+                top:449px;
+                padding:10px;
+
             }
+
+            .smallInfo {
+                position:relative;
+                left:275px;
+                top:10px;
+                list-style-type:disc;
+            }
+
+
+            .smallInfo li{
+                clear:both;
+                font-size:.5em;
+            }
+
+
+
+
 
         </style>
     </head>
@@ -116,7 +167,7 @@
 
 
         <header>
-            <div id="container">
+            <div id="container" class="container">
                 <div id="logo">
 
                     <h1>Navelgazer</h1>
@@ -127,7 +178,7 @@
 
                     <ul>
 
-                        <li><a href="#specs">SPECIFICATIONS</a></li>
+                        <li><a href="#specs">TECH SPECS</a></li>
                         <li><a href="#testimonials">TESTIMONIALS</a></li>
                         <li><a href="#download">DOWNLOAD</a></li>
 
@@ -143,11 +194,63 @@
         </header> 
 
         <img src="autonavel2.jpg" width="100%" />
+
         <div id="lowerdiv">
+
+            <div class="container">
+
+                <h3>Generate and SAVE unique <i>Automated Navelgazings</i>:</h3>
+
+
+                <section id="specs" >
+                    <h2> specs</h2>
+                    <ul id="specsList" class="smallInfo">
+                        <li>deploy 12 Certified Masterstrokes </li>
+                        <li>save three formulae</li>
+                        <li>1920 x 1052 pixels</li>
+                        <li>24 bit RGB images</li>
+                        <li>randomness option</li>
+                        <li>hair option</li>
+                    </ul>
+                </section>
+
+
+                <section id="testimonials">
+                    <h2> testimonials</h2>
+                    <ul id="testimonialList" class="smallInfo">
+                        <li>deploy 12 Certified Masterstrokes </li>
+                        <li>save three formulae</li>
+                        <li>1920 x 1052 pixels</li>
+                        <li>24 bit RGB images</li>
+                        <li>randomness option</li>
+                        <li>hair option</li>
+                    </ul>
+                </section>
+
+
+                <section id="download">
+                    <h2> download</h2>
+                    <ul id="downloadInstructions" class="smallInfo">
+                        <li>deploy 12 Certified Masterstrokes </li>
+                        <li>save three formulae</li>
+                        <li>1920 x 1052 pixels</li>
+                        <li>24 bit RGB images</li>
+                        <li>randomness option</li>
+                        <li>hair option</li>
+                    </ul>
+                </section>
+
+
+            </div>
+
 
         </div>
 
 
 
-            </body>
-        </html>
+
+
+
+
+    </body>
+</html>
