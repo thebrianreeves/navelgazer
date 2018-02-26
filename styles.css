@@ -9,142 +9,139 @@ html {
 
 i {
 
-font-style:italic;
+    font-style:italic;
 }
 
 body {
 
-text-align:center;
-font-family:sans-serif;
-font-size: 2em;
-
-
+    text-align:center;
+    font-family:sans-serif;
+    font-size: 2em;
 }
 
 section {
-position:relative;
-margin-top:20px;
-float:left;
-background-color:antiquewhite;
-
+    position:relative;
+    margin-top:20px;
+    float:left;
+    background-color:antiquewhite;
+    margin:-15px 4px;
+    padding:5px;
+    text-align:center;
 
 }
 
 img {
-position:sticky;
-top:49px;
+    position:sticky;
+    top:49px;
 }
+
 header {
-background-color:white;
-position: sticky;
-top:-3px;
+    background-color:white;
+    position: sticky;
+    top:-3px;
 }
 
 .container {
 
-text-align:left;
-width:80%;
-margin:auto;
-flex:auto;
-
-
-
+    text-align:left;
+    width:80%;
+    margin:auto;
+    display:flex;
+    justify-content: center;
 }
 
 h1 {
-padding:9px;
-color:white;
-text-shadow: -.5px -1px 1px rgba(10,1,1,.4);
-font-style:italic;
+    padding:9px;
+    color:white;
+    text-shadow: -.5px -1px 1px rgba(10,1,1,.4);
+    font-style:italic;
 }
 
 h2 {
-color:black;
-font-size:1em;
-text-align:right;
-position:absolute;
-font-weight:bold;
+    color:black;
+    font-size:.7em;
+    text-align:left;
+    position:relative;
+    font-weight:bold;
 
-left:480px;
-top:66px;
-line-height:10px;
+    left:0px;
+    top:6px;
+    line-height:10px;
 
 }
 h3 {
-margin-left:170px;
-font-size:.7em;
+    margin-left:170px;
+    font-size:.7em;
 }
 
 nav ul {
 
-font-size:.4em;
-list-style-type:none;
-font-style:normal;
+    font-size:.4em;
+    list-style-type:none;
+    font-style:normal;
 }
 
 
 
 a:link {
-text-decoration:none;
-color:brown;
+    text-decoration:none;
+    color:brown;
 }
 a:active {
 
-color:black;
+    color:black;
 }
 
 a:hover {
 
-color:white;
+    color:white;
 }
 
 
 a:visited {
-color:grey;
+    color:grey;
 }
 
 
 nav ul li {
-float:left;
-padding:5px;
-margin:5px;
+    float:left;
+    padding:5px;
+    margin:5px;
 
 
 }
 
 #logo {
-z-index:4;
-background-color:white;
-float:left;
+    z-index:4;
+    background-color:white;
+    float:left;
 }
 
 nav  {
-position:relative;
-top:10px;
+    position:relative;
+    top:10px;
 }
 
 
 #lowerdiv {
-z-index:5;
+    z-index:5;
+    background-color:white;
+    text-align:left;
 
-background-color:white;
-text-align:left;
-position:sticky;
-top:449px;
-padding:10px;
+    padding:10px;
 
 }
 
 .smallInfo {
-position:relative;
-left:275px;
-top:10px;
-list-style-type:disc;
+    position:relative;
+    left:275px;
+    top:10px;
+    list-style-type:disc;
 }
 
 
 .smallInfo li{
-clear:both;
-font-size:.5em;
+    clear:both;
+    font-size:.5em;
 }
 
