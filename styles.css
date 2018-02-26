@@ -187,11 +187,13 @@ footer {
     
     text-align:center;
     display:flex;
+    justify-content: center;
     
     
 }
 
 footer div h6 {
-    
+    position:fixed;
+    bottom:7px;
     text-align:center;
 }
