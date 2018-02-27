@@ -32,21 +32,36 @@ section {
     justify-content: center;
 }
 
+.slide-buttons{
+    
+    position:relative;
+    
+}
+
 section div {
     background-color:none;
 }
 
 button {
-     font-size:1.4em; 
+    font-size:1.4em; 
     padding: 10px 20px;
     margin-top:20px;
     border-radius:10px;
 }
 
+.slide-btn {
+    
+        height:10px;
+        width:10px;
+        background-color:white;
+        padding: 0px 0px;
+        margin: 10px 0 0 10px;
+        border-radius:50%;
+}
 
-img {
-    position:sticky;
-    top:49px;
+.active {
+
+    background-color:grey;
 }
 
 header {
@@ -196,4 +211,45 @@ footer div h6 {
     position:fixed;
     bottom:7px;
     text-align:center;
+}
+
+
+.slide-viewer {
+    position:relative;
+    overflow:hidden;
+    height:430px;
+    
+}
+
+
+
+.slide-group{
+    
+    width:100%;
+    height:100%;
+    
+    position: relative;
+    
+}
+
+
+.slide {
+    
+    width: 100%;
+    height:100%;
+    display:none;
+    position:absolute;
+    
+}
+
+.slide img {
+    width:100%;
+    height:auto;
+    
+}
+
+
+.slide:first-child {
+    display:block;
+  
 }
