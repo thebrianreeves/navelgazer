@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Navelgazer
+        </title>
+
+        <link rel="stylesheet" type="text/css" href="reset.css"/>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+
+    </head>
+    <body>
+        <header>
+            <div id="container" class="container">
+                <div id="logo">
+
+                    <h1>Navelgazer</h1>
+
+                </div>
+
+                <nav>
+
+                    <ul>
+
+                        <li><a href="#specs">TECH SPECS</a></li>
+                        <li><a href="#testimonials">TESTIMONIALS</a></li>
+                        <li><a href="#download">DOWNLOAD</a></li>
+                    </ul>
+
+
+
+                </nav> 
+
+            </div>
+        </header> 
+
+        <div class="slider">
+
+            <div class="slide-viewer">
+
+                <div class="slide-group">
+
+                    <div class="slide slide-1">
+                        <img src="autonavel2.jpg" />
+                    </div>
+
+                    <div class="slide slide-3">
+                        <img src="autonavel3.jpg"  />
+                    </div>
+                    
+                    <div class="slide slide-2">
+                        <img src="automatednavelgazing_1-17-2018-50.jpg" />
+                    </div>
+
+                    <div class="slide slide-3">
+                        <img src="automatednavelgazing_1-17-2018-33.jpg" />
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="slide-buttons"></div>
+
+        </div>
+
+
+
+
+        <div id="lowerdiv">
+            <h3>Generate and SAVE unique<wbr> <i>Automated Navelgazings</i>:</h3>
+
+            <div class="container">
+
+                <section id="specs" >
+                    <div>
+
+                        <ul id="specsList" class="smallInfo">
+                            <li>12 Certified Masterstrokes to deploy as a set or individually</li>
+                            <li>save three formulae to revisit later in the session</li>
+                            <li>generate 1920 x 1052 pixel 24 bit RGB images</li>
+                            <li>randomness and hair option</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="download">
+                    <div>
+                        <h2>LEARN IT TODAY</h2>
+                        <button  href="navelgazer.macosx.zip">DOWNLOAD for Mac</button><h2>For home &amp; office use:</h2>
+                    </div>
+                </section>
+
+
+            </div>
+
+
+            <footer>
+                <div>
+                    <h6> &copy;2018 Navelgazer Studio</h6>
+                </div>
+            </footer>
+
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+        <script>
+
+
+
+            $('.slider').each(function() {
+
+
+                var $this = $(this);
+                var $group = $this.find('.slide-group');
+                var $slides = $this.find('.slide');
+                var buttonArray = [];
+                var currentIndex = 0;
+                var timeout;
+
+                function move(newIndex) {
+
+                    var animateLeft,slideLeft;
+                    advance();
+
+                    if ($group.is(':animated') || currentIndex === newIndex)  {
+
+                        return;
+
+                    }
+
+                    buttonArray [currentIndex].removeClass('active');
+                    buttonArray[newIndex].addClass('active');
+
+                    if (newIndex > currentIndex)   {
+
+                        slideLeft = '100%';
+                        animateLeft = '-100%';
+                    } else {
+                        slideLeft = '-100%';
+                        animateLeft = '100%';
+                    }
+
+                    $slides.eq(newIndex).css(  {left:slideLeft, display:'block'});
+                    $group.animate( {left:animateLeft} , function() {
+                        $slides.eq(currentIndex).css({display:'none'});
+                        $slides.eq(newIndex).css( {left:0} );
+                        $group.css ({left:0});
+                        currentIndex = newIndex;
+                    });
+                }
+
+
+                function advance () {
+
+                    clearTimeout(timeout);
+                    timeout = setTimeout(function() {
+                        if (currentIndex < ($slides.length - 1))   {
+
+                            move(currentIndex +1);
+
+                        }
+                        else {
+                            move(0);
+                        }
+                    },4000);
+
+
+
+                }
+
+                $.each($slides, function(index) {
+                    var $button = $('<button type="button" class="slide-btn"></button>');
+                    if(index === currentIndex)  {
+                        $button.addClass('active');
+                    }
+                    $button.on('click',function() {
+
+                        move(index);
+                    }).appendTo($this.find('.slide-buttons'));
+                    buttonArray.push($button);
+                });
+                advance();
+
+
+
+            });
+
+
+
+
+
+
+        </script>
+
+
+
+    </body>
+</html>
