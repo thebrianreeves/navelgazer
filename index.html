@@ -11,7 +11,8 @@
     </head>
     <body>
         <header>
-            <div id="container" class="container">
+            <div  class="container logoAndNav">
+               
                 <div id="logo">
 
                     <h1>Navelgazer</h1>
@@ -24,12 +25,14 @@
 
                         <li><a href="#specs">TECH SPECS</a></li>
                         <li><a href="#testimonials">TESTIMONIALS</a></li>
-                        <li><a href="#download">DOWNLOAD</a></li>
+                        <li><a href="navelgazer.application.macosx">DOWNLOAD</a></li>
                     </ul>
 
 
 
                 </nav> 
+                   
+                
 
             </div>
         </header> 
@@ -41,35 +44,32 @@
                 <div class="slide-group">
 
                     <div class="slide" id="slide-1">
+
+                    
                         <img src="autonavel2.jpg" />
+                        <div id="useful"><q>it's so useful</q></div>
                     </div>
 
                     <div class="slide" id="slide-2">
+                        
                         <img src="autonavel3.jpg"  />
-                    </div>
-                    
-<!--
-                    <div class="slide" id="slide-3">
-                        <img src="automatednavelgazing_1-17-2018-50.jpg" />
+                        <div id="important work"><q>important work</q></div>
                     </div>
 
-                    <div class="slide" id="slide-4">
-                        <img src="automatednavelgazing_1-17-2018-33.jpg" />
-                    </div>
+                    <!--
+<div class="slide" id="slide-3">
+<img src="automatednavelgazing_1-17-2018-50.jpg" />
+</div>
+
+<div class="slide" id="slide-4">
+<img src="automatednavelgazing_1-17-2018-33.jpg" />
+</div>
 -->
-
-                </div>
+                 </div>
 
             </div>
-
-
             <div class="slide-buttons"></div>
-
         </div>
-
-
-
-
         <div id="lowerdiv">
             <h3>Generate and SAVE unique<wbr> <i>Automated Navelgazings</i>:</h3>
 
@@ -90,16 +90,14 @@
                 <section id="download">
                     <div>
                         <h4>For home &amp; office use:</h4>
-                       
-                        <button  href="navelgazer.macosx.zip">DOWNLOAD for Mac</button>
+
+                        <button><a href="navelgazer.application.macosx">DOWNLOAD for Mac</a></button>
                         <h3>LEARN IT TODAY</h3>
                     </div>
                 </section>
 
 
             </div>
-
-
             <footer>
                 <div>
                     <h6> &copy;2018 Navelgazer Studio</h6>
@@ -114,7 +112,7 @@
 
         <script>
 
-            
+
             /* animate the small squarearticles*/
 
             var divs = $('div[id^="slide-"]').hide(), i = 0;
@@ -131,86 +129,86 @@
 
 
             })();
-            
 
 
-//            $('.slider').each(function() {
-//
-//
-//                var $this = $(this);
-//                var $group = $this.find('.slide-group');
-//                var $slides = $this.find('.slide');
-//                var buttonArray = [];
-//                var currentIndex = 0;
-//                var timeout;
-//
-//                function move(newIndex) {
-//
-//                    var animateLeft,slideLeft;
-//                    advance();
-//
-//                    if ($group.is(':animated') || currentIndex === newIndex)  {
-//
-//                        return;
-//
-//                    }
-//
-//                    buttonArray [currentIndex].removeClass('active');
-//                    buttonArray[newIndex].addClass('active');
-//
-//                    if (newIndex > currentIndex)   {
-//
-//                        slideLeft = '100%';
-//                        animateLeft = '-100%';
-//                    } else {
-//                        slideLeft = '-100%';
-//                        animateLeft = '100%';
-//                    }
-//
-//                    $slides.eq(newIndex).css(  {left:slideLeft, display:'block'});
-//                    $group.animate( {left:animateLeft} , function() {
-//                        $slides.eq(currentIndex).css({display:'none'});
-//                        $slides.eq(newIndex).css( {left:0} );
-//                        $group.css ({left:0});
-//                        currentIndex = newIndex;
-//                    });
-//                }
-//
-//
-//                function advance () {
-//
-//                    clearTimeout(timeout);
-//                    timeout = setTimeout(function() {
-//                        if (currentIndex < ($slides.length - 1))   {
-//
-//                            move(currentIndex +1);
-//
-//                        }
-//                        else {
-//                            move(0);
-//                        }
-//                    },4000);
-//
-//
-//
-//                }
-//
-//                $.each($slides, function(index) {
-//                    var $button = $('<button type="button" class="slide-btn"></button>');
-//                    if(index === currentIndex)  {
-//                        $button.addClass('active');
-//                    }
-//                    $button.on('click',function() {
-//
-//                        move(index);
-//                    }).appendTo($this.find('.slide-buttons'));
-//                    buttonArray.push($button);
-//                });
-//                advance();
-//
-//
-//
-//            });
+
+            //            $('.slider').each(function() {
+            //
+            //
+            //                var $this = $(this);
+            //                var $group = $this.find('.slide-group');
+            //                var $slides = $this.find('.slide');
+            //                var buttonArray = [];
+            //                var currentIndex = 0;
+            //                var timeout;
+            //
+            //                function move(newIndex) {
+            //
+            //                    var animateLeft,slideLeft;
+            //                    advance();
+            //
+            //                    if ($group.is(':animated') || currentIndex === newIndex)  {
+            //
+            //                        return;
+            //
+            //                    }
+            //
+            //                    buttonArray [currentIndex].removeClass('active');
+            //                    buttonArray[newIndex].addClass('active');
+            //
+            //                    if (newIndex > currentIndex)   {
+            //
+            //                        slideLeft = '100%';
+            //                        animateLeft = '-100%';
+            //                    } else {
+            //                        slideLeft = '-100%';
+            //                        animateLeft = '100%';
+            //                    }
+            //
+            //                    $slides.eq(newIndex).css(  {left:slideLeft, display:'block'});
+            //                    $group.animate( {left:animateLeft} , function() {
+            //                        $slides.eq(currentIndex).css({display:'none'});
+            //                        $slides.eq(newIndex).css( {left:0} );
+            //                        $group.css ({left:0});
+            //                        currentIndex = newIndex;
+            //                    });
+            //                }
+            //
+            //
+            //                function advance () {
+            //
+            //                    clearTimeout(timeout);
+            //                    timeout = setTimeout(function() {
+            //                        if (currentIndex < ($slides.length - 1))   {
+            //
+            //                            move(currentIndex +1);
+            //
+            //                        }
+            //                        else {
+            //                            move(0);
+            //                        }
+            //                    },4000);
+            //
+            //
+            //
+            //                }
+            //
+            //                $.each($slides, function(index) {
+            //                    var $button = $('<button type="button" class="slide-btn"></button>');
+            //                    if(index === currentIndex)  {
+            //                        $button.addClass('active');
+            //                    }
+            //                    $button.on('click',function() {
+            //
+            //                        move(index);
+            //                    }).appendTo($this.find('.slide-buttons'));
+            //                    buttonArray.push($button);
+            //                });
+            //                advance();
+            //
+            //
+            //
+            //            });
 
 
 

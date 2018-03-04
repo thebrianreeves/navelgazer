@@ -65,15 +65,21 @@ button {
 }
 
 header {
-    background-color:white;
     position: sticky;
     top:-3px;
     z-index:10;
+    text-align:left;
+}
+
+.logoAndNav {
+    
+    text-align:left;  
+    
 }
 
 .container {
-    text-align:center;
-    width:70%;
+    text-align:left;
+    width:100%;
     margin:auto;
     display:flex;
     justify-content: center;
@@ -99,8 +105,8 @@ h2 {
 }
 
 h3 {
-   line-height:1em;
-   font-size:1.4em;
+    line-height:1em;
+    font-size:1.4em;
     margin-bottom:6px;
     padding:12px;
     font-weight:bold;
@@ -111,9 +117,7 @@ h6 {
     font-size: .4em;
 }
 
-
 nav ul {
-
     font-size:.4em;
     list-style-type:none;
     font-style:normal;
@@ -121,7 +125,7 @@ nav ul {
 
 a:link {
     text-decoration:none;
-    color:brown;
+    color:grey;
 }
 a:active {
 
@@ -133,31 +137,27 @@ a:hover {
     color:white;
 }
 
-
 a:visited {
     color:grey;
 }
-
 
 nav ul li {
     float:left;
     padding:5px;
     margin:5px;
-
-
 }
 
 #logo {
     z-index:4;
-    background-color:white;
+    
     float:left;
 }
 
-nav  {
+nav {
     position:relative;
     top:10px;
+    
 }
-
 
 #lowerdiv {
     z-index:5;
@@ -199,12 +199,26 @@ nav  {
     
 }
 
+
+
 footer {
     
     text-align:center;
     display:flex;
     justify-content: center;
     
+    
+}
+.slide div q {
+    
+    font-family:serif;
+    font-style:italic;
+    color:white;
+    position:absolute;
+    top:390px;
+    left:170px;
+    font-size:1.4em;
+    text-shadow: 2px 2px 4px black;
     
 }
 
@@ -215,12 +229,14 @@ footer div h6 {
 }
 
 
+.slider
+
 .slide-viewer {
     position:relative;
-    overflow:hidden;
+    overflow:visible;
     height:440px;
     display:sticky;
-    top:26px;
+    top:0px;
 }
 
 
@@ -245,11 +261,37 @@ footer div h6 {
     
 }
 
+
+.slide img:before {
+    
+    
+    width:100%;
+    height:100%; 
+    background-color:black;
+    position:relative;
+    left:-300px;
+    
+}
+
+.slide img:after {
+
+
+    width:100%;
+    height:100%; 
+    background-color:black;
+    position:relative;
+    left:-300px;
+
+}
+
+
+
 .slide img {
    
    object-fit: cover;
    height:440px;
-   //object-position:  center center;
+   
+    position:relative;
 
 }
 
